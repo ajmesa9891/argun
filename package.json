@@ -1,0 +1,34 @@
+{
+  "name": "argun",
+  "version": "0.0.0",
+  "description": "Javascript function argument validation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt mochaTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajmesa89/argun.git"
+  },
+  "keywords": [
+    "argument",
+    "validation"
+  ],
+  "author": "Alejandro Mesa",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/ajmesa89/argun/issues"
+  },
+  "homepage": "https://github.com/ajmesa89/argun",
+  "devDependencies": {
+    "grunt": "~0.4.3",
+    "grunt-docco": "~0.3.3",
+    "mocha": "~1.17.1",
+    "grunt-mocha-test": "~0.9.4",
+    "should": "~3.1.3",
+    "sinon": "~1.9.0"
+  },
+  "dependencies": {
+    "underscore": "~1.6.0"
+  }
+}
