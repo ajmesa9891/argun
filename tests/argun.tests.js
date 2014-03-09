@@ -141,6 +141,16 @@ describe('Argun', function () {
 		userTask({ command: 'bombard', user: 'knox', securityLevel: 5 })
 			.should.equal(uncheckedReturn);
 	});
+
+	it('can handle array argumnets', function () {
+		var isArray = a.validator(_.isArray, "must be an array");
+
+		var checked = a
+			.validate([isArray])
+			.andCall(unchecked);
+
+		checked([5, 6]).should.equal(uncheckedReturn);
+	});
 });
 
 describe('A validator', function() {
